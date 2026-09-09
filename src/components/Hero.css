@@ -1,0 +1,52 @@
+/* Hero section overall styling */
+#hero {
+  display: flex;              /* photo + text side by side */
+  align-items: center;        /* vertically center */
+  justify-content: center;    /* horizontally center */
+  gap: 40px;                  /* space between photo and text */
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #6b46c1, #805ad5);
+  color: white;
+  flex-wrap: wrap;            /* responsive for mobile */
+}
+
+/* Profile image styling */
+.profile-img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;       /* round frame */
+  object-fit: cover;   
+  object-position: top;     /* crop nicely */
+  border: 4px solid #fff;   
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+/* Text container */
+#hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+#hero p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  max-width: 400px;
+}
+
+/* Button styling */
+#hero button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #f4f4f9;
+  color: #6b46c1;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#hero button:hover {
+  background-color: #ddd;
+  color: #553c9a;
+}
+
