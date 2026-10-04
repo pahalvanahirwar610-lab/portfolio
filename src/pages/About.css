@@ -1,0 +1,122 @@
+/* Page Background & Font */
+.about {
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #a855f7, #9333ea); /* purple gradient */
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+}
+
+/* Container shifted to left, bigger width */
+.container {
+  max-width: 1100px;       /* thoda bada */
+  margin-left: 60px;       /* left side shift */
+  margin-right: 120px;     /* right side gap */
+}
+
+/* Section Cards */
+.card {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent card */
+  padding: 30px;                        /* thoda bada padding */
+  margin-bottom: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+.card h3 {
+  color: #00c6ff;
+  margin-bottom: 15px;
+  font-size: 1.6rem;
+}
+
+/* Lists */
+.card ul {
+  list-style: none;
+  padding: 0;
+}
+.card li {
+  margin: 10px 0;
+  font-size: 1rem;
+}
+
+/* Skills Progress Bars */
+.skill {
+  margin: 18px 0;
+}
+.skill span {
+  font-weight: 500;
+  display: block;
+  margin-bottom: 5px;
+}
+.progress {
+  background: #333;
+  border-radius: 20px;
+  height: 24px; /* thoda bada */
+  position: relative;
+}
+.bar {
+  background: linear-gradient(90deg, #00c6ff, #007bff);
+  height: 100%;
+  width: 0;
+  border-radius: 20px;
+  animation: fillBar 2s forwards;
+  position: relative;
+}
+.bar::after {
+  content: attr(data-percent);
+  position: absolute;
+  right: 10px;
+  top: 0;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+}
+@keyframes fillBar {
+  to { width: var(--progress); }
+}
+
+/* Projects Cards */
+.project-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 22px;
+  margin: 18px 0;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+.project-card h4 {
+  color: #00c6ff;
+  margin-bottom: 10px;
+}
+
+/* Certifications Links */
+.card a {
+  text-decoration: none;
+  color: #00c6ff;
+  font-weight: 500;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
+/* Contact Button at bottom */
+.contact-btn {
+  text-align: center;
+  margin-top: 50px;
+}
+.contact-btn button {
+  padding: 14px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.contact-btn button:hover {
+  transform: scale(1.05);
+}

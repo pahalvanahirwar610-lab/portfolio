@@ -1,0 +1,81 @@
+.contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Back Button */
+.back-btn {
+    margin-bottom: 15px;
+}
+.back-btn button {
+    padding: 8px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(90deg, #ff6b6b, #ff4757);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.back-btn button:hover {
+    transform: scale(1.05);
+}
+
+.contact h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 5px;
+    font-weight: bold;
+}
+
+.contact input,
+.contact textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact textarea {
+    min-height: 100px;
+}
+
+.contact button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contact button:hover {
+    background-color: #2980b9;
+}
+
+/* Footer Section */
+.footer {
+    margin-top: 30px;
+    text-align: center;
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ddd;
+}
+.footer a {
+    color: #3498db;
+    text-decoration: none;
+}
+.footer a:hover {
+    text-decoration: underline;
+}
