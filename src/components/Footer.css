@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .footer {
   background-color: #2c3e50;
   color: white;
@@ -16,9 +17,29 @@
 }
 
 .footer a:hover {
+=======
+#footer {
+  background: #6b46c1;
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#footer a {
+  color: #f4f4f9;
+  font-weight: bold;
+}
+
+#footer a:hover {
+>>>>>>> b3d9d91e4301b01ad4ad4a2f558c3ed61097873a
   color: #ddd;
 }
 
 .footer-container p {
+<<<<<<< HEAD
   margin: 35px 0;
+=======
+  margin: 10px 0;
+>>>>>>> b3d9d91e4301b01ad4ad4a2f558c3ed61097873a
 }
